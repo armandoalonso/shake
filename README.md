@@ -2,6 +2,8 @@
 A Behavior that shakes the object. <br>
 
 Author: piranha305 <br>
+Website: https://piranha305.itch.io/ <br>
+Download Latest Version : [Version: 1.0.0.0](https://github.com/armandoalonso/shake/releases/latest) <br>
 <sub>Made using [c3ide2-framework](https://github.com/ConstructFund/c3ide2-framework) </sub><br>
 
 ## Table of Contents
