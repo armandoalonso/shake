@@ -12,7 +12,7 @@ module.exports = {
   author: "piranha305",
   website: "https://piranha305.itch.io/",
   documentation: "https://github.com/armandoalonso/shake/blob/main/README.md",
-  description: "A Behavior that shakes the object.",
+  description: "A Behavior that shakes the object, for Construct 3.",
   // addonUrl: "https://www.construct.net/en/make-games/addons/####/XXXX", // displayed in auto-generated docs
   githubUrl: "https://github.com/armandoalonso/shake", // displays latest release version in auto-generated docs
   // icon: "icon.svg", // defaults to "icon.svg" if omitted
@@ -71,12 +71,12 @@ module.exports = {
       type: 'combo',
       id: 'magnitudeMode',
       name: 'Magnitude Mode',
-      desc: 'Magnitude mode.',
+      desc: 'Magnitude mode. (Select if the magnitude is constant or decays over time)',
       options: {
-        initialValue: 'Decay',
+        initialValue: 'decay',
         items: [
-          { Constant : "Constant" },
-          { Decay : "Decay" }
+          { constant : "Constant" },
+          { decay : "Decay" }
         ]
       }
     },
@@ -84,13 +84,13 @@ module.exports = {
       type: 'combo',
       id: 'shakeAxis',
       name: 'Shake Axis',
-      desc: 'Shake axis.',
+      desc: 'Shake axis. (Select which axis to offset)',
       options: {
-        initialValue: 'XY',
+        initialValue: 'xy',
         items: [
-          { XY : "Shake XY Axis" },
-          { X : "Shake Only X Axis" },
-          { Y : "Shake Only Y Axis" }
+          { xy : "Shake XY Axis" },
+          { x : "Shake Only X Axis" },
+          { y : "Shake Only Y Axis" }
         ]
       }
     }    
@@ -247,7 +247,7 @@ module.exports = {
       ],
       listName: "Set Magnitude Mode",
       displayText: "{my}: Set Magnitude Mode ({0})",
-      description: "Set the magnitude mode of the shake.",
+      description: "Set the magnitude mode of the shake. (Select if the magnitude is constant or decays over time)",
     },
     SetShakeAxis: {
       category: "properties",
@@ -263,9 +263,9 @@ module.exports = {
           type: "combo",
           value: "xy",
           items: [
-            {"XY" : "Both XY"},
-            {"X" : "Only X"},
-            {"Y" : "Only Y"}
+            {"xy" : "Both XY"},
+            {"x" : "Only X"},
+            {"y" : "Only Y"}
           ]
         }
       ],
